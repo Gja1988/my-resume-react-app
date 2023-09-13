@@ -1,0 +1,61 @@
+body {
+  background-color: beige;
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: center;
+}
+
+.left-content {
+  flex: 1; /* Take up available space on the left */
+  padding: 20px;
+}
+
+.right-content {
+  flex: 1; /* Take up available space on the right */
+  padding: 20px;
+  background-color: #f0f0f0; /* Optional: Add a background color for clarity */
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.styled-input {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.label-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Button style with subtle colors and separation */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  margin-right: 10px; /* Add margin to the right for spacing */
+}
+
+.custom-button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.custom-button:hover {
+  background-color: #d3d3d3;
+}
+
+.custom-button:focus {
+  outline: none; /* Remove default focus outline */
+}
